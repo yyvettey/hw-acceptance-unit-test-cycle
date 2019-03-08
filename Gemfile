@@ -21,8 +21,10 @@ group :test do
   gem 'cucumber-rails-training-wheels'
 end
 group :production do
-  gem 'pg'
+  # gem 'pg'
 end
+
+gem 'pg', '~> 0.20'
 
 # Gems used only for assets and not required
 # in production environments by default.
