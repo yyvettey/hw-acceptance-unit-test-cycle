@@ -65,7 +65,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     director = @movie.director
     if director && !director.empty? then
-      @movies = Movie.where(Director: director)
+      @movies = Movie.where(director: director)
     else
       redirect_to movies_path, notice: "'#{@movie.title}' has no director info"
     end
